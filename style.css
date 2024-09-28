@@ -1,0 +1,114 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+.hero-section {
+  /* background-color: #f8f9fa; */
+  padding: 20px 0;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-text {
+  max-width: 500px;
+}
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+.hero-text p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.custom-btn {
+  background-color: #72c3b9;
+  color: white;
+  padding: 4px 28px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-size: 21px;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Add transition */
+}
+
+.custom-btn:hover {
+  background-color: #5da8a1; /* Darker shade on hover */
+  transform: scale(1.1); /* Scale effect */
+  color: white; /* Ensure text color stays white on hover */
+}
+
+.kiosk-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.nav-link {
+  color: #333 !important;
+}
+.logoborder {
+  border-radius: 15px;
+  border: 2px solid;
+  padding: 0px 20px;
+  font-size: 21px;
+}
+.nav-link {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+/* Default state for the underline */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When active, show underline */
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+p {
+  font-size: 16px !important;
+}
+.captiontext {
+  max-width: 300px;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    font-size: 16.5px !important;
+  }
+}
+.nav-item {
+  padding: 0 20px;
+  font-weight: 400;
+}
+.navbar {
+  --bs-navbar-padding-y: 2rem !important;
+}
+.p-caption {
+}
+@media (max-width: 768px) {
+  .captiontext {
+    max-width: 100%;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .mpt-10 {
+    padding-top: 20px;
+  }
+}
